@@ -36,3 +36,193 @@
     transform: rotate(360deg);
   }
 }
+
+
+#root{
+  height: 100vh;
+  width: 100vw;
+ 
+}
+
+.App{
+  height: 100vh;
+  width: 100vw;
+  
+   
+}
+ 
+.topBar-container{
+  background-color:black; 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+ 
+.logo-alkemy img {
+  object-fit: contain;
+  
+}
+
+.home-create-container{
+  align-self: center;
+
+}
+
+.home-link, .create-link{
+  margin-right: 40px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+ 
+
+.home-link:visited, .create-link:visited {
+  color: white;
+}
+
+.home-link:active, .create-link:active {
+  color: lightskyblue;
+}
+
+table{
+
+  border: solid 2px black;
+  width: 100%;
+ 
+  
+} 
+
+.table-container{
+margin: 20px;
+overflow-x: auto;
+}
+
+.operations-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.operations-table  td, .operations-table  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.operations-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.operations-table tr:hover {background-color: #ddd;}
+
+.operations-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+}
+ .id-col {
+  width: 10%;
+}
+
+.date-col {
+ width: 10%;
+}
+
+.category-col{
+  width: 20%;
+}
+
+.concept-col{
+  width: 20%;
+}
+
+.amount.col {
+  width: 20%;
+}
+
+.buttons-col a{
+  text-decoration: none;
+}
+
+.buttons-col button{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 25px;
+  border-radius: 5px; 
+  border: solid 1px;
+}
+
+
+.row-label-input-edit{
+  display: flex;
+  margin: 5px;
+}
+
+.total-balance-container p{
+ font-size: 30px;
+ font-weight: 800;
+}
+
+button  {
+  cursor: pointer;
+}
+
+ 
+
+@media (min-width:277px) {
+  .logo-alkemy {
+      width: 90%;
+      height: 66px;
+  }   
+  .home-create-container{
+    width: auto;
+    align-self: center;
+  }
+  .home-link, .create-link{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .form-container{
+    width: 100%;
+  }
+
+  .create-op-form{
+    margin: 40px;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+
+  select {
+    width: 50%;
+  }
+  .row-label-input-edit p{
+    width: 50%;
+  }
+  .row-label-input-edit input{
+    width: 50%;
+  }
+  .row-label-input-edit{
+    margin: 10px;
+  }
+  .button-create {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 361px) {
+  .home-link, .create-link{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+}
+
+

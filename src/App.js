@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+ 
+import Home from './components/Home';
 import './App.css';
+import { Route, Routes, BrowserRouter, Link  } from 'react-router-dom';
+import { OpEdit } from './components/OpEdit';
+import NotFoundPage from './components/NotFoundPage';
+import { OpCreate } from './components/OpCreate';
+import TopBar from './TopBar';
+
 
 function App() {
+
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar/> 
+      <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/operation/edit/:id' element={<OpEdit/>} />
+      <Route path='/operation/create' element={<OpCreate/>} />
+      <Route path='*' element={<NotFoundPage/>} />
+    </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
